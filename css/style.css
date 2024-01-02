@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+#Header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+#Header h1 img {
+    height: 4rem;
+}
+
+#Header .Gnb ul {
+    display: flex;
+    gap: 4rem;
+}

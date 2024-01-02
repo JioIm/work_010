@@ -1,0 +1,37 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+.default {
+    padding: 100px 0;
+}
+
+.default .title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    /* margin: 0 0 8px 0; */
+    /* 마진을 아래쪽으로만 주는 원칙을 깬다. */
+}
+
+.default .title p {
+    margin: 16px 0 0 0;
+}
+
+
+@media (max-width: 768px) {
+    .default .title h2 {
+        font-size: 5vw;
+    }
+
+    .default .title p {
+        font-size: 2.5vw;
+    }
+}
