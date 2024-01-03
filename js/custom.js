@@ -1,6 +1,7 @@
 $(function () {
-    const MAIN_VISUAL_SLIDE = new Swiper('.main_visual_slide', {
-        loop: true,
+    const MAIN_CONTENT_SLIDE = new Swiper('.main_content_slide', {
+        effect: 'fade',
+        loop: 'true',
         pagination: {
             el: ".swiper-pagination",
         },

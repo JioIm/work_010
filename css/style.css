@@ -19,14 +19,118 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10rem;
+    height: 8rem;
+    max-width: 160rem;
+    color: #fff;
 }
 
 #Header h1 img {
-    height: 4rem;
+    height: 3rem;
 }
 
 #Header .Gnb ul {
     display: flex;
-    gap: 4rem;
+    gap: 7rem;
+}
+
+#Header .Gnb ul a {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#Header .util {}
+
+#Header .util span {
+    font-size: 2.4rem;
+    padding: 1.2rem;
+}
+
+.MainVisual {}
+
+.MainVisual .itm {
+    position: relative;
+}
+
+.MainVisual .itm video {
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.MainVisual .itm .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* .MainVisual .itm01 {
+    background: url(../images/MainVisual_002.jpg)no-repeat center center/cover;
+}
+
+.MainVisual .itm02 {
+    background: url(../images/MainVisual_003.jpg)no-repeat center center/cover;
+}
+
+.MainVisual .itm03 {
+    background: url(../images/MainVisual_004.jpg)no-repeat center center/cover;
+}
+
+.MainVisual .itm04 {
+    background: url(../images/MainVisual_005.jpg)no-repeat center center/cover;
+} */
+
+.MainContent {
+    text-align: center;
+}
+
+.MainContent h2 {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.MainContent .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainContent .swiper-slide figure {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.MainContent .swiper-slide figure {}
+
+.MainContent .swiper-slide img {
+    display: block;
+    width: 30rem;
+    height: 50rem;
+    object-fit: cover;
+}
+
+.MainContent .swiper-slide .txt_area {
+    text-align: center;
+}
+
+.MainContent .swiper-slide .txt_area strong {
+    font-family: 2021, Arial Condensed Bold, Arial Narrow Bold, sans-serif;
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 0 0 2.4rem 0;
+}
+
+.MainContent .swiper-slide .txt_area p {
+    font-size: 2.4rem;
+    font-weight: 500;
 }

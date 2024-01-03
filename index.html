@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/hamburgers.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/custom.js"></script>
@@ -50,39 +54,134 @@
         <main id="main" class="main">
             <section class="MainVisual">
                 <h2 class="blind">메인 슬라이드</h2>
-                <div class="swiper main_visual_slide ">
+                <div class="visual_slide">
+                    <div class="itm">
+                        <div class="slogan">
+                            <strong>LET'S MIX THINGS UP!</strong>
+                            <p></p>
+                        </div>
+                        <video src="./images/MainVisualVideo.mp4" autoplay muted playsinline loop></video>
+                    </div>
+                </div>
+                <!-- <div class="swiper main_visual_slide ">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide itm itm01">
                             <div class="content">
-                                <div class="img_area">
-                                    <img src="./images/MainVisual_001.jpg" alt="">
+                                <div class="txt_area">
+                                    <strong>20s era cocktails</strong>
+                                    <p>Step back into the past with these 1920s cocktails!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm02">
                             <div class="content">
-                                <div class="img_area">
-                                    <img src="./images/MainVisual_002.jpg" alt="">
+                                <div class="txt_area">
+                                    <strong>20s era cocktails</strong>
+                                    <p>Step back into the past with these 1920s cocktails!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm03">
                             <div class="content">
-                                <div class="img_area">
-                                    <img src="./images/MainVisual_003.jpg" alt="">
+                                <div class="txt_area">
+                                    <strong>8 types of super simple cocktails!</strong>
+                                    <p>Introducing 8 amazing cocktails that you can mix and drink right from the glass.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm04">
                             <div class="content">
-                                <div class="img_area">
-                                    <img src="./images/MainVisual_004.jpg" alt="">
+                                <div class="txt_area">
+                                    <strong>19 types of non-alcoholic cocktails</strong>
+                                    <br>Do you think you can't mix up with people because you can't drink
+                                    alcohol?<br />
+                                    Let’s have fun together! Because you can drink mocktails anytime!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                </div> -->
+            </section>
+            <section class="MainContent default">
+                <h2 class="blind">Main Content</h2>
+                <div class="inner">
+                    <div class="swiper main_content_slide ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide itm itm01">
+                                <figure>
+                                    <div class="img_area">
+                                        <img src="./images/menu_004.png" alt="">
+                                    </div>
+                                    <div class="txt_area">
+                                        <strong>Absolut Vodka</strong>
+                                        <p>The birth of a bold, unique and creative vodka!</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide itm itm02">
+                                <figure>
+                                    <div class="img_area">
+                                        <img src="./images/menu_002.png" alt="">
+                                    </div>
+                                    <div class="txt_area">
+                                        <strong>Absolut Grapefruit</strong>
+                                        <p>Absolut Grapefruit is one of the most attractive new products</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide itm itm03">
+                                <figure>
+                                    <div class="img_area">
+                                        <img src="./images/menu_003.png" alt="">
+                                    </div>
+                                    <div class="txt_area">
+                                        <strong>Absolut Passion Fruit</strong>
+                                        <p>Perfect spirit for everything from sunny afternoon gatherings to nighttime
+                                            parties.</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide itm itm04">
+                                <figure>
+                                    <div class="img_area">
+                                        <img src="./images/menu_001.png" alt="">
+                                    </div>
+                                    <div class="txt_area">
+                                        <strong>Absolut Watermelon</strong>
+                                        <p>Absolute Watermelon is undoubtedly a hit this summer. </p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide itm itm05">
+                                <figure>
+                                    <div class="img_area">
+                                        <img src="./images/menu_005.png" alt="">
+                                    </div>
+                                    <div class="txt_area">
+                                        <strong>Absolute Lime</strong>
+                                        <p>Perfect solution to add a refreshing twist to many of today’s classic drinks
+                                        </p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide itm itm06">
+                                <figure>
+                                    <div class="img_area">
+                                        <img src="./images/menu_006.png" alt="">
+                                    </div>
+                                    <div class="txt_area">
+                                        <strong>Absolut Mosaik</strong>
+                                        <p>We’re all unique. Unique but not alone.</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
+
             </section>
         </main>
         <Footer id="Footer" class="Footer">
