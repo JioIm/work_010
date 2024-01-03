@@ -69,68 +69,94 @@ body {
     color: #fff;
 }
 
-/* .MainVisual .itm01 {
-    background: url(../images/MainVisual_002.jpg)no-repeat center center/cover;
-}
-
-.MainVisual .itm02 {
-    background: url(../images/MainVisual_003.jpg)no-repeat center center/cover;
-}
-
-.MainVisual .itm03 {
-    background: url(../images/MainVisual_004.jpg)no-repeat center center/cover;
-}
-
-.MainVisual .itm04 {
-    background: url(../images/MainVisual_005.jpg)no-repeat center center/cover;
-} */
-
 .MainContent {
-    text-align: center;
+    position: relative;
+    background: #f9f9f9;
+    height: 100vh;
 }
 
 .MainContent h2 {
     font-size: 4rem;
     font-weight: 700;
+}
 
+.MainContent .main_content_slide {
+    background: tomato;
+    width: 50rem;
+    height: 70rem;
+    margin: 0 auto;
+    border-radius: 25rem 25rem 0 0;
+}
+
+.MainContent .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
 }
 
 .MainContent .swiper-slide {
-    text-align: center;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
 }
 
-.MainContent .swiper-slide figure {
-    display: flex;
-    align-items: center;
-    flex: 1;
+.MainContent .itm {
+    position: relative;
+    
+    overflow: hidden;
 }
 
-.MainContent .swiper-slide figure {}
-
-.MainContent .swiper-slide img {
+.MainContent .main_content_slide .img{
     display: block;
-    width: 30rem;
-    height: 50rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: block; */
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
-.MainContent .swiper-slide .txt_area {
+.MainContent .itm .txt_box {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
     text-align: center;
-}
-
-.MainContent .swiper-slide .txt_area strong {
-    font-family: 2021, Arial Condensed Bold, Arial Narrow Bold, sans-serif;
-    display: block;
-    font-size: 3.2rem;
-    font-weight: 600;
     margin: 0 0 2.4rem 0;
 }
 
-.MainContent .swiper-slide .txt_area p {
+.MainContent .swiper-slide .txt_box strong {
+    display: inline-block;
     font-size: 2.4rem;
     font-weight: 500;
+    margin: 0 0 2.4rem 0;
+}
+
+.MainContent .swiper-slide .txt_box p {
+    font-size: 1.6rem;
+    
+    margin: 0 0 4rem 0;
+}
+
+.MainContent .swiper-slide   .btn_area {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.MainContent .swiper-slide  .btn_area a {
+    display: inline-block;
+    border: 1px solid #202124;
+    padding: 0.8rem 2rem;
+    color: #202124;
+    font-size: 1.4rem;
 }
