@@ -12,7 +12,33 @@ body {
     left: 0;
     right: 0;
     z-index: 999;
-    border-bottom: 1px solid #f9f9f9;
+    color: #f9f9f9;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+#Header.on {
+    color: #0033a0;
+    border-bottom: 1px solid #0033a0;
+    z-index: 999;
+}
+
+
+.Header h1 a {
+    display: inline-block;
+    width: 20rem;
+    height: 4rem;
+    background: url(../images/absolut_logo.png) no-repeat center center/cover;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+#Header.on h1 a {
+    display: inline-block;
+    width: 20rem;
+    height: 4rem;
+    background: url(../images/absolut_logo_blue.png) no-repeat center center/cover;
+    font-size: 0;
+    vertical-align: middle;
 }
 
 #Header .inner {
@@ -21,11 +47,10 @@ body {
     align-items: center;
     height: 8rem;
     max-width: 160rem;
-    color: #fff;
 }
 
 #Header h1 img {
-    height: 3rem;
+    /* height: 3rem; */
 }
 
 #Header .Gnb ul {
@@ -56,6 +81,7 @@ body {
     height: 100vh;
     vertical-align: middle;
     object-fit: cover;
+    filter: brightness(40%)
 }
 
 .MainVisual .itm .slogan {
@@ -64,20 +90,53 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 600;
-    color: #fff;
+    color: #f9f9f9;
+    z-index: 999;
 }
 
 .MainContent {
     position: relative;
     background: #f9f9f9;
-    height: 100vh;
+}
+
+.MainContent .inner {
+    padding: 80px 15px 0 15px;
 }
 
 .MainContent h2 {
     font-size: 4rem;
     font-weight: 700;
+}
+
+.MainContent .title_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+.MainContent .title_txt .left {
+    position: absolute;
+    left: 15px;
+    font-size: 8rem;
+    font-weight: 800;
+    letter-spacing: -0.2rem;
+    color: #0033a0;
+}
+
+.MainContent .title_txt .right {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 9rem;
+    color: #0033a0;
+
+    position: absolute;
+    right: 15px;
 }
 
 .MainContent .main_content_slide {
@@ -108,11 +167,11 @@ body {
 
 .MainContent .itm {
     position: relative;
-    
+
     overflow: hidden;
 }
 
-.MainContent .main_content_slide .img{
+.MainContent .main_content_slide img {
     display: block;
     position: absolute;
     left: 0;
@@ -128,35 +187,137 @@ body {
     width: 100%;
     height: auto;
     left: 0;
-    bottom: 0;
+    bottom: 5rem;
     text-align: center;
-    margin: 0 0 2.4rem 0;
+    z-index: 999;
 }
 
-.MainContent .swiper-slide .txt_box strong {
+/* .MainContent .swiper-slide .txt_box strong {
     display: inline-block;
     font-size: 2.4rem;
     font-weight: 500;
     margin: 0 0 2.4rem 0;
-}
+} */
 
 .MainContent .swiper-slide .txt_box p {
-    font-size: 1.6rem;
-    
-    margin: 0 0 4rem 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0 0 2.4rem 0;
+    text-transform: uppercase;
+    color: #333;
 }
 
-.MainContent .swiper-slide   .btn_area {
-    position: absolute;
-    bottom: 0;
+.MainContent .swiper-slide .btn_area {
+    /* position: absolute;
+    bottom: 5rem;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
-.MainContent .swiper-slide  .btn_area a {
+.MainContent .swiper-slide .btn_area a {
     display: inline-block;
-    border: 1px solid #202124;
-    padding: 0.8rem 2rem;
-    color: #202124;
-    font-size: 1.4rem;
+    border: 2px solid #0033a0;
+    background: #f9f9f9;
+    padding: 0.8rem 3rem;
+    color: #0033a0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.MainContent .swiper-slide .btn_area:hover a {
+    display: inline-block;
+    border: 1px solid #0033a0;
+    background: #0033a0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.MainInfo {}
+
+.MainInfo .title {
+
+    text-align: center;
+    /* margin: 0 0 4rem 0; */
+}
+
+.MainInfo .title strong {
+    /* font-size: 4rem;
+    font-weight: 700; */
+
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -0.2rem;
+    color: #0033a0;
+}
+
+.MainInfo .title p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+
+    font-size: 5rem;
+    color: #0033a0;
+}
+
+.MainInfo .content_inner {
+    display: flex;
+}
+
+.MainInfo .itm {
+    position: relative;
+    height: 60rem;
+    flex: 1;
+    /* filter: blur(2px); */
+    transition: 0.6s;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.MainInfo .itm.on {
+    flex: 4;
+    /* filter: blur(0); */
+}
+
+.MainInfo .itm01 {
+    background: url(../images/MainVisual_002.jpg) no-repeat center center/cover;
+}
+
+.MainInfo .itm02 {
+    background: url(../images/MainVisual_003.jpg) no-repeat center center/cover;
+}
+
+.MainInfo .itm03 {
+    background: url(../images/MainVisual_004.jpg) no-repeat center center/cover;
+}
+
+.MainInfo .itm04 {
+    background: url(../images/MainVisual_005.jpg) no-repeat center center/cover;
+}
+
+.MainInfo .itm::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 90%);
+}
+
+.MainInfo .itm .con {
+    position: absolute;
+    bottom: 10rem;
+    left: 8rem;
+}
+
+.MainInfo .itm .con p {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+    filter: blur(6px);
+    transition: 0.6s;
+}
+
+.MainInfo .itm.on .con p {
+    filter: blur(0);
 }
