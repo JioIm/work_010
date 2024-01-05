@@ -5,7 +5,9 @@ $(function () {
         afterLoad: function (anchorLink, index) {
             console.log(anchorLink, index);
             if (index == 2 || index == 3) {
-                $('.Header').addClass('on')
+                if (!$('.Gnb').hasClass('on')) {
+                    $('.Header').addClass('on')
+                }
             } else {
                 $('.Header').removeClass('on')
             }
@@ -25,10 +27,10 @@ $(function () {
 
     });
 
-    $('#custom_nav li').click(function() {
+    $('#custom_nav li').click(function () {
         var index = $(this).index() + 1;
         $.fn.fullpage.moveTo(index);
-    }); 
+    });
 
     const MAIN_CONTENT_SLIDE = new Swiper('.main_content_slide', {
         // effect: 'fade',
@@ -42,13 +44,14 @@ $(function () {
         $(this).addClass('on');
     })
 
-    
+
     $('.side_nav li').on('click', function () {
         $(this).addClass('on').siblings().removeClass('on')
     });
 
 
     $('.mopen').on('click', function () {
+        $('.Header').removeClass('on');
         $('.Gnb').toggleClass('on');
         $(this).find('.hamburger').toggleClass('is-active');
     })

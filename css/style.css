@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid lightskyblue;
+    outline: 1px solid lightskyblue--;
 }
 
 html {
@@ -24,6 +24,7 @@ body {
     color: #0033a0;
     border-bottom: 1px solid #0033a0;
     z-index: 999;
+    background: #fff;
 }
 
 
@@ -53,10 +54,6 @@ body {
     max-width: 160rem;
 }
 
-#Header h1 img {
-    /* height: 3rem; */
-}
-
 #Header .Gnb ul {
     display: flex;
     gap: 7rem;
@@ -73,113 +70,113 @@ body {
 }
 
 @media (max-width:768px) {
-   
-#Header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    color: #f9f9f9;
-    border-bottom: 1px solid #cfcfcf;
-}
 
-#Header.on {
-    color: #0033a0;
-    border-bottom: 1px solid #0033a0;
-    z-index: 999;
-}
+    #Header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        color: #f9f9f9;
+        border-bottom: none;
+    }
 
-
-.Header h1 a {
-    display: inline-block;
-    width: 20rem;
-    height: 4rem;
-    background: url(../images/absolut_logo.png) no-repeat center center/cover;
-    font-size: 0;
-    vertical-align: middle;
-}
-
-#Header.on h1 a {
-    display: inline-block;
-    width: 20rem;
-    height: 4rem;
-    background: url(../images/absolut_logo_blue.png) no-repeat center center/cover;
-    font-size: 0;
-    vertical-align: middle;
-}
-
-#Header h1 {
-    position: fixed;
-    z-index: 10000;
-    top: 3rem;
-    left: 3rem;
-}
-
-#Header h1 img {
-    padding: 0 3rem;
-}
-
-#Header .Gnb {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    z-index: 1000;
-    width: calc(100% - 10rem);
-    background: #0033a0;
-    height: 100vh;
-
-    padding: 12rem 3rem 0 3rem;
-    transition: left 0.5s;
-}
+    #Header.on {
+        color: #0033a0;
+        border-bottom: 1px solid #0033a0;
+        z-index: 999;
+    }
 
 
-#Header .Gnb ul {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
+    .Header h1 a {
+        display: inline-block;
+        width: 20rem;
+        height: 4rem;
+        background: url(../images/absolut_logo.png) no-repeat center center/cover;
+        font-size: 0;
+        vertical-align: middle;
+    }
 
-#Header .Gnb ul>li a {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 500;
-    white-space: nowrap;
-}
+    #Header.on h1 a {
+        display: inline-block;
+        width: 20rem;
+        height: 4rem;
+        background: url(../images/absolut_logo_blue.png) no-repeat center center/cover;
+        font-size: 0;
+        vertical-align: middle;
+    }
 
-#Header .inner .Gnb>ul>li>a {
-    color: #fff;
-    line-height: 4rem;
-    border-bottom: 0.1rem solid #a5a5a5;
-}
+    #Header h1 {
+        position: fixed;
+        z-index: 10000;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    #Header h1 img {
+        padding: 0 3rem;
+    }
+
+    #Header .Gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 1000;
+        width: calc(100% - 10rem);
+        background: #0033a0;
+        height: 100vh;
+
+        padding: 12rem 3rem 0 3rem;
+        transition: left 0.5s;
+    }
 
 
-#Header .inner .Gnb.on {
-    left: 0;
-}
+    #Header .Gnb ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
 
-#Header .mopen {
-    display: block;
-    position: fixed;
-    right: 2rem;
-    top: 2rem;
+    #Header .Gnb ul>li a {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        white-space: nowrap;
+    }
 
-    /* line-height: 1; */
-}
-
-
-#Header .mopen button {
-    border: none;
-    background: transparent;
-    color: #0033a0;
-}
+    #Header .inner .Gnb>ul>li>a {
+        color: #fff;
+        line-height: 4rem;
+        border-bottom: 0.1rem solid #a5a5a5;
+    }
 
 
-#Header .mopen span {
-    color: #0033a0;
-}
+    #Header .inner .Gnb.on {
+        left: 0;
+    }
 
-    
+    #Header .mopen {
+        display: block;
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+
+        /* line-height: 1; */
+    }
+
+
+    #Header .mopen button {
+        border: none;
+        background: transparent;
+        color: #0033a0;
+    }
+
+
+    #Header .mopen span {
+        color: #0033a0;
+    }
+
+
 }
 
 .MainVisual {
@@ -208,11 +205,12 @@ body {
     font-weight: 600;
     color: #f9f9f9;
     z-index: 999;
+    text-shadow: 3px 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .MainContent {
     position: relative;
-    background: #f9f9f9;
+    background: url(../images/sec2_bg.jpg) no-repeat center center/cover;
 }
 
 .MainContent .inner {
@@ -345,12 +343,117 @@ body {
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    .MainContent {
+        position: relative;
+        background: url(../images/sec2_r_bg.jpg) no-repeat center center/cover;
+    }
+
+    .MainContent .inner {
+        padding: 10rem 1.5rem 0 1.5rem;
+    }
+
+    .MainContent .title_txt {
+        position: static;
+        transform: translate(0, -75%);
+        text-align: center;
+    }
+
+    .MainContent .title_txt .left {
+        position: static;
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    .MainContent .title_txt .right {
+        position: static;
+        font-size: 3.2rem;
+    }
+
+    .MainContent .main_content_slide {
+        width: 30rem;
+        height: 50rem;
+        margin: 0 auto;
+        border-radius: 25rem 25rem 0 0;
+    }
+
+    .MainContent .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+    }
+
+    .MainContent .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+    }
+
+    .MainContent .itm {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .MainContent .main_content_slide img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* display: block; */
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .MainContent .itm .txt_box {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: 5rem;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .MainContent .swiper-slide .txt_box p {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 0 0 2.4rem 0;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+    .MainContent .swiper-slide .btn_area a {
+        display: inline-block;
+        border: 2px solid #0033a0;
+        background: #f9f9f9;
+        padding: 0.8rem 3rem;
+        color: #0033a0;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .MainContent .swiper-slide .btn_area:hover a {
+        display: inline-block;
+        border: 1px solid #0033a0;
+        background: #0033a0;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+
 .MainInfo .inner {
     display: flex;
     justify-content: space-between;
     padding: 10rem 0 0 0;
 }
-
 
 .MainInfo .title {
     text-align: left;
@@ -372,12 +475,48 @@ body {
 
     font-size: 6rem;
     color: #0033a0;
+    margin: 0 0 6rem 0;
 }
+
+
+.MainInfo .title .btn_area a {
+    display: inline-block;
+    border: 1px solid #0033a0;
+    background: #f9f9f9;
+    padding: 0.8rem 1.6rem;
+    color: #0033a0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.MainInfo .title .btn_area span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 0 0 0.8rem;
+}
+
+.MainInfo .title .btn_area:hover a {
+    display: inline-block;
+    border: 1px solid #0033a0;
+    background: #0033a0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.MainInfo .title .btn_area:hover span {
+    display: inline-block;
+    border: 1px solid #0033a0;
+    background: #0033a0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 
 .MainInfo .content_inner {
     display: flex;
     flex: 4;
-    
 }
 
 .MainInfo .itm {
@@ -439,36 +578,159 @@ body {
     filter: blur(0);
 }
 
-.Footer  {
+@media (max-width: 768px) {
+
+    .MainInfo .inner {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+    }
+
+
+    .MainInfo .title {
+        text-align: center;
+    }
+
+    .MainInfo .title strong {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    .MainInfo .title p {
+        font-size: 3.2rem;
+        margin: 0 0 3rem 0;
+    }
+
+
+    .MainInfo .title .btn_area a {
+        display: inline-block;
+        border: 1px solid #0033a0;
+        background: #f9f9f9;
+        padding: 0.8rem 1.6rem;
+        color: #0033a0;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .MainInfo .title .btn_area span {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0 0 0 0.8rem;
+    }
+
+    .MainInfo .title .btn_area:hover a {
+        display: inline-block;
+        border: 1px solid #0033a0;
+        background: #0033a0;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .MainInfo .title .btn_area:hover span {
+        display: inline-block;
+        border: 1px solid #0033a0;
+        background: #0033a0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+
+    .MainInfo .content_inner {
+        display: flex;
+        flex: 4;
+    }
+
+    .MainInfo .itm {
+        position: relative;
+        height: 50rem;
+        flex: 1;
+        transition: 0.6s;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .MainInfo .itm.on {
+        flex: 4;
+    }
+
+    .MainInfo .itm01 {
+        background: url(../images/MainVisual_002.jpg) no-repeat center center/cover;
+    }
+
+    .MainInfo .itm02 {
+        background: url(../images/MainVisual_003.jpg) no-repeat center center/cover;
+    }
+
+    .MainInfo .itm03 {
+        background: url(../images/MainVisual_004.jpg) no-repeat center center/cover;
+    }
+
+    .MainInfo .itm04 {
+        background: url(../images/MainVisual_005.jpg) no-repeat center center/cover;
+    }
+
+    .MainInfo .itm::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 90%);
+    }
+
+    .MainInfo .itm .con {
+        position: absolute;
+        bottom: 10rem;
+        left: 8rem;
+    }
+
+    .MainInfo .itm .con p {
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+        filter: blur(6px);
+        transition: 0.6s;
+    }
+
+    .MainInfo .itm.on .con p {
+        filter: blur(0);
+    }
+}
+
+.Footer {
     padding: 4rem 0 4rem 0;
     height: 8rem;
     background: #0033a0;
-  }
-  
+}
+
 .Footer .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-  }
+}
 
 .Footer .logo_box {
     width: 30rem;
 }
-  
+
 .Footer .content_box {
     flex: 1;
     margin: 0 0 0 8rem;
 }
-  
+
 .Footer .address_wrap {
     max-width: 1200px;
     margin: 0 auto;
     font-weight: 200;
     color: #fff;
 }
-  
+
 .Footer .customer_area {
     display: flex;
     gap: 6rem;
@@ -476,18 +738,18 @@ body {
     color: #ddd;
     align-items: center;
 }
-  
+
 .Footer .customer_area ul {
     display: flex;
     gap: 6rem;
     color: #fff;
 }
-  
+
 .Footer .customer_area ul li {
-   font-weight: 500;
+    font-weight: 500;
 }
 
-.Footer  .address_wrap address {
+.Footer .address_wrap address {
     margin: 15px 0 0 0;
 }
 
@@ -496,24 +758,25 @@ body {
     gap: 3rem;
 }
 
-  
+
 .Footer .select_box select {
     background: none;
     border: 1px solid #fff;
     padding: 0.4rem 1rem;
     color: #fff;
- }
- 
- .Footer .select_box option {
-     color: #202124;
- }
-
- @media (max-width:768px) {
-
-    
-.Footer .logo_box {
-    margin: 0 0 2rem 0;
 }
+
+.Footer .select_box option {
+    color: #202124;
+}
+
+@media (max-width:768px) {
+
+
+    .Footer .logo_box {
+        width: 20rem;
+        margin: 0 0 2rem 0;
+    }
 
     #Footer .inner {
         flex-direction: column;
@@ -522,13 +785,17 @@ body {
         text-align: center;
     }
 
+    .Footer .customer_area {
+        gap: 3rem;
+    }
+
     #Footer .content_box {
         margin: 0 0 2rem 0;
     }
 
 
 }
-   
+
 
 #custom_nav {
     position: fixed;
@@ -564,4 +831,3 @@ body {
         display: none;
     }
 }
-
